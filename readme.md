@@ -2,19 +2,28 @@
 
 The Volt Vault is a powerful tool for storing and monitoring statistics about your LiPo batteries. With Volt Vault, you can keep track of various battery metrics, such as cycle count, performance, and charging characteristics. This document outlines the system's interfaces, database tables, and the latest schema to help you get started with Volt Vault.
 
-(Apologies for the over-enthusiasm of this readme... it, and half of this code, was written by Chat-GPT)
-
 ## Interfaces
 
-### Charge Logger
+### Flight Logger
+The Flight Logger interface allows you to log details about your drone flights, including battery performance and flight statistics. Here's how it works:
 
-The Charge Logger interface allows you to set up charge sessions and record battery charging information. Here's how it works:
+>[!Note] 
+>Before using the Flight Logger, ensure you have created at least one battery and one drone in the database. The Flight Logger requires valid battery and drone entries for proper functioning.
 
-1. **Start a Charge Session**: Begin a new charge session by specifying the batteries you are charging, the charger you are using, and the power source.
+
+1. **Enter Drone Name**: Start a new flight session by entering the name of the drone you will be flying.
     
-2. **Log Charging Details**: During the charge session, Volt Vault will prompt you to record the charging data, including voltage values.
+2. **Enter Battery Details**: Specify the battery being used for the flight, including the battery code, initial voltage, and other relevant information.
     
-3. **Monitor Charging Performance**: Volt Vault will store the charging information for future reference, enabling you to monitor the charging performance of your batteries and chargers.
+3. **Begin the Flight**: Start the flight, and the system will automatically record the flight's start timestamp.
+    
+4. **End the Flight**: After completing the flight, record the final voltage, minimum voltage, armed time, and total flight time.
+    
+5. **Review and Confirm**: Review the flight summary, and confirm whether you are happy with the recorded details.
+    
+6. **Update Flight Details**: If needed, you can update flight details, such as changing the drone, battery, or other metrics.
+    
+7. **Monitor Flight Performance**: Volt Vault will store flight data for future reference, enabling you to monitor drone and battery performance over time.
     
 
 ## Database Tables
