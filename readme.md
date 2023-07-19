@@ -1,5 +1,5 @@
 # Volt Vault
-The Volt Vault is a place for storing stats about your LiPo batteries. It will allow you to monitor stats such as:
+The Volt Vault is a place for storing stats about your drone flights and LiPo batteries. It will allow you to monitor stats such as:
 - How many cycles each battery has been run through
 - Which batteries have been allowed to dip to dangerous levels in the past
 - Which batteries perform best
