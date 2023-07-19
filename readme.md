@@ -7,9 +7,7 @@ The Volt Vault is a powerful tool for storing and monitoring statistics about yo
 ### Flight Logger
 The Flight Logger interface allows you to log details about your drone flights, including battery performance and flight statistics. Here's how it works:
 
->[!Note] 
->Before using the Flight Logger, ensure you have created at least one battery and one drone in the database. The Flight Logger requires valid battery and drone entries for proper functioning.
-
+> **Note**: Before using the Flight Logger, ensure you have created at least one battery and one drone in the database. The Flight Logger requires valid battery and drone entries for proper functioning.
 
 1. **Enter Drone Name**: Start a new flight session by entering the name of the drone you will be flying.
     
